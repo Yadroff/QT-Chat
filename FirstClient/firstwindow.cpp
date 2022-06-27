@@ -24,14 +24,14 @@ void FirstWindow::ReadingData()
      QByteArray datagram;
      datagram.resize(socket->pendingDatagramSize());
      socket->readDatagram(datagram.data(), datagram.size(), &sender, &senderPort);
-     ui->textEdit->append("<font color=red>" + QTime::currentTime().toString("HH:mm::ss") + QString(datagram) + "</font>");
+     ui->textEdit->append("<font color=red>" + QTime::currentTime().toString("HH:mm:ss") + " " + QString(datagram) + "</font>");
  }
 }
 
 void FirstWindow::on_pushButton_clicked()
 {
     socket->writeDatagram(ui->lineEdit->text().toUtf8(), QHostAddress::LocalHost, SECOND_PORT);
-    ui->textEdit->append("Вы: <font color=blue>" + QTime::currentTime().toString("HH:mm:ss") + "\t" + ui->lineEdit->text() + "<\font>");
+    ui->textEdit->append("Вы: <font color=blue>" + QTime::currentTime().toString("HH:mm:ss") + " " + ui->lineEdit->text() + "<\font>");
     ui->lineEdit->clear();
 }
 

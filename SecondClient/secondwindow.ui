@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>FirstWindow</class>
- <widget class="QMainWindow" name="FirstWindow">
+ <class>SecondWindow</class>
+ <widget class="QMainWindow" name="SecondWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
+    <width>803</width>
     <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>FirstWindow</string>
+   <string>SecondWindow</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTextEdit" name="textEdit">
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>20</y>
-      <width>801</width>
-      <height>431</height>
+      <y>10</y>
+      <width>811</width>
+      <height>411</height>
      </rect>
     </property>
     <property name="readOnly">
@@ -31,18 +34,18 @@
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>470</y>
+      <y>430</y>
       <width>801</width>
-      <height>71</height>
+      <height>61</height>
      </rect>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>550</y>
-      <width>191</width>
+      <x>329</x>
+      <y>500</y>
+      <width>141</width>
       <height>25</height>
      </rect>
     </property>
@@ -51,8 +54,23 @@
     </property>
    </widget>
   </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>803</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <tabstops>
+  <tabstop>lineEdit</tabstop>
+  <tabstop>textEdit</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
  <resources/>
  <connections/>
 </ui>
